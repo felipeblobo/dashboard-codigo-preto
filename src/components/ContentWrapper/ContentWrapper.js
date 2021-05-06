@@ -1,5 +1,6 @@
 import PageContent from "./PageContent/PageContent";
-import WrapperTopBar from "./WrapperTopBar";
+import WrapperTopBar from "./WrapperTopBar/WrapperTopBar";
+import Footer from "./Footer/Footer";
 
 
 function ContentWrapper() {
@@ -7,6 +8,7 @@ function ContentWrapper() {
     <div id="content-wrapper" className="d-flex flex-column">
       <WrapperTopBar />
       <PageContent />
+      <Footer />
     </div>
   );
 }

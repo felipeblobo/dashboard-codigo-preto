@@ -1,4 +1,4 @@
-import Avatar from '../../assets/images/dummy-avatar.jpg';
+import Avatar from '../../../assets/images/dummy-avatar.jpg';
 
 
 function WrapperTopBar () {
