@@ -1,16 +1,14 @@
-import SideBar from './components/SideBar';
-import ContentWrapper from './components/ContentWrapper/ContentWrapper';
-import './assets/css/style.css';
+import SideBar from "./components/SideBar/SideBar";
+import ContentWrapper from "./components/ContentWrapper/ContentWrapper";
 
 function App() {
   return (
     <>
-      <div id='wrapper'>
+      <div id="wrapper">
         <SideBar />
         <ContentWrapper />
-      
-        </div>
-   </>
+      </div>
+    </>
   );
 }
 
