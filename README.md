@@ -5,8 +5,6 @@
 
 Exercício para compreensão do conceito de componentes e primeiros passos no React.
 
-<br>
-<br>
 
 ## ⛏ Tech
 - [X] ReactJS
