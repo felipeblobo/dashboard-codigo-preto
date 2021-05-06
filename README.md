@@ -19,7 +19,7 @@ Exercício para compreensão do conceito de componentes e primeiros passos no Re
 **Clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/felipeblobo/devtalk.git && cd devtalk
+$ git clone https://github.com/felipeblobo/dashboard-codigo-preto.git && cd dashboard-codigo-preto
 ```
 
 **Follow the steps below**
