@@ -8,6 +8,7 @@ Exercício para compreensão do conceito de componentes e primeiros passos no Re
 
 ## ⛏ Tech
 - [X] ReactJS
+- [X] Bootstrap
 
 
 ## 💻 Getting started
