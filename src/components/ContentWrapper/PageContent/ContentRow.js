@@ -1,17 +1,10 @@
 // import PropTypes from "prop-types";
 import { useState } from "react";
 
-function ContentRow() {
-  const products = {
-    quantity: 135,
-    amount: "$ 546.456",
-  };
+function ContentRow(props) {
 
-  const usersObject = {
-    quantity: 38,
-  };
-
-	const [users, setUsers] =useState(usersObject.quantity);
+	const [products] = useState(props.products);
+	const [users, setUsers] =useState(props.users.quantity);
 
 	function changeUsersQuantity() {
 		setUsers(users + 1)

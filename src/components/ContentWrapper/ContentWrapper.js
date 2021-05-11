@@ -4,6 +4,7 @@ import Footer from "./Footer/Footer";
 
 
 function ContentWrapper() {
+ 
   return (
     <div id="content-wrapper" className="d-flex flex-column">
       <WrapperTopBar />

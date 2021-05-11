@@ -1,6 +1,9 @@
 import Product from "../../../assets/images/product_dummy.svg";
+import Card from "./Card";
+ 
 
-function ContentRow2() {
+function ContentRow2(props) {
+ 
   const categories = [
     {
       id: 1,
@@ -27,7 +30,7 @@ function ContentRow2() {
       language: "Go",
     },
   ];
-
+  
   return (
     // <!-- Amount of Products in DB -->
     <>
@@ -35,7 +38,7 @@ function ContentRow2() {
         <div className="card shadow mb-4">
           <div className="card-header py-3">
             <h6 className="m-0 font-weight-bold text-primary">
-              Last product in Data Dase
+              Last product in Data Base
             </h6>
           </div>
           <div className="card-body">
@@ -70,15 +73,7 @@ function ContentRow2() {
           </div>
           <div className="card-body">
             <div className="row">
-              {categories.map((category) => {
-                return (
-                  <div className="col-lg-6 mb-4">
-                    <div className="card bg-info text-white shadow">
-                      <div className="card-body">{category.language}</div>
-                    </div>
-                  </div>
-                );
-              })}
+              <Card categories={categories}/>
             </div>
           </div>
         </div>
