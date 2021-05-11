@@ -1,6 +1,33 @@
-import Product from '../../../assets/images/product_dummy.svg'
+import Product from "../../../assets/images/product_dummy.svg";
 
 function ContentRow2() {
+  const categories = [
+    {
+      id: 1,
+      language: "JavaScript",
+    },
+    {
+      id: 2,
+      language: "Ruby",
+    },
+    {
+      id: 3,
+      language: "Java",
+    },
+    {
+      id: 4,
+      language: "Python",
+    },
+    {
+      id: 5,
+      language: "PHP",
+    },
+    {
+      id: 6,
+      language: "Go",
+    },
+  ];
+
   return (
     // <!-- Amount of Products in DB -->
     <>
@@ -15,9 +42,9 @@ function ContentRow2() {
             <div className="text-center">
               <img
                 className="img-fluid px-3 px-sm-4 mt-3 mb-4"
-                style={{width: "25rem"}}
+                style={{ width: "25rem" }}
                 src={Product}
-                alt=''
+                alt=""
               />
             </div>
             <p>
@@ -43,36 +70,15 @@ function ContentRow2() {
           </div>
           <div className="card-body">
             <div className="row">
-              <div className="col-lg-6 mb-4">
-                <div className="card bg-info text-white shadow">
-                  <div className="card-body">Category 01</div>
-                </div>
-              </div>
-              <div className="col-lg-6 mb-4">
-                <div className="card bg-info text-white shadow">
-                  <div className="card-body">Category 02</div>
-                </div>
-              </div>
-              <div className="col-lg-6 mb-4">
-                <div className="card bg-info text-white shadow">
-                  <div className="card-body">Category 03</div>
-                </div>
-              </div>
-              <div className="col-lg-6 mb-4">
-                <div className="card bg-info text-white shadow">
-                  <div className="card-body">Category 04</div>
-                </div>
-              </div>
-              <div className="col-lg-6 mb-4">
-                <div className="card bg-info text-white shadow">
-                  <div className="card-body">Category 05</div>
-                </div>
-              </div>
-              <div className="col-lg-6 mb-4">
-                <div className="card bg-info text-white shadow">
-                  <div className="card-body">Category 06</div>
-                </div>
-              </div>
+              {categories.map((category) => {
+                return (
+                  <div className="col-lg-6 mb-4">
+                    <div className="card bg-info text-white shadow">
+                      <div className="card-body">{category.language}</div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
