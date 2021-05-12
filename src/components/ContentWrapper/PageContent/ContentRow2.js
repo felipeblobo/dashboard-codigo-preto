@@ -1,36 +1,7 @@
 import Product from "../../../assets/images/product_dummy.svg";
-import Card from "./Card";
- 
 
 function ContentRow2(props) {
- 
-  const categories = [
-    {
-      id: 1,
-      language: "JavaScript",
-    },
-    {
-      id: 2,
-      language: "Ruby",
-    },
-    {
-      id: 3,
-      language: "Java",
-    },
-    {
-      id: 4,
-      language: "Python",
-    },
-    {
-      id: 5,
-      language: "PHP",
-    },
-    {
-      id: 6,
-      language: "Go",
-    },
-  ];
-  
+    
   return (
     // <!-- Amount of Products in DB -->
     <>
@@ -73,7 +44,7 @@ function ContentRow2(props) {
           </div>
           <div className="card-body">
             <div className="row">
-              <Card categories={categories}/>
+              {props.children}
             </div>
           </div>
         </div>
